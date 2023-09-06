@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Membuat formulir pendaftaran</title>
+  </head>
+  <body>
+    <h2>Formulir pendaftaran anggota</h2>
+    <h3>Silahkan isi dengan benar</h3>
+    <form action="contact.php" method="POST">
+      <fieldset>
+        <p>  
+        <label>Nama:</label>
+            <input type="text" name="nama_lengkap">
+        </p>
+        <p>
+            <label>TTL:</label>
+                <input type="date" name="begin" 
+        placeholder="dd-mm-yyyy" value=""
+        min="1997-01-01" max="2030-12-31">
+        </p>
+        <p>
+          <label>Gender</label>
+            <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+              <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+              <input type="submit" name="kirim" value="Oke">
+        </p>
+        <p>
+          <label>Email:</label>
+            <input type="email" name="email">
+        </p>
+        <p>
+         <label>Password:</label>
+            <input type="password" name="Password">
+         </p>
+         <p>
+          <label>Konfirmasi Password:</label>
+            <input type="password" name="konfirmasi password">
+          </p>
+          <p>
+            <label>Alamat:</label>
+                
+            <textarea>
+                </textarea>>
+          </p>
+          <p>
+            <label>Provinsi</label>
+                <select id="form_prov">
+                    <option value="">Pilih Provinsi</option>
+                    <option value="Jawa Timur"> Jawa Timur </option>
+                    <option value="Jawa Tengah"> Jawa Tengah </option>
+                    <option value="Jawa Barat"> Jawa Barat </option>
+                </select>
+              </p>
+                <p>
+                  <label>Negara</label>
+                <select id="form_prov">
+                    <option value="">Negara</option>
+                    <option value="Amerika"> Amerika </option>
+                    <option value="Belgia"> Belgia </option>
+                    <option value="Cina"> Cina </option>
+                    <option value="Denmark"> Demark </option>
+                    <option value="Indonesia"> Indonesia </option>
+                </select>
+            </p>
+          <tr><td><input type="checkbox" name="saya setuju dengan aturan privasi" checked > saya setuju dengan aturan privasi</td><tr>
+            
+            <p>
+
+           <td
+            colspan="2" align="right">
+           <input type="submit" name="kirim" value="Daftar">
+          <input type="submit" name="cancel" value="Batal">
+          </fieldset>
+    </form>
+  </body>
+</html>
